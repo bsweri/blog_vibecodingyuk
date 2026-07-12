@@ -18,7 +18,7 @@
   margin-bottom: 20px;
 }
 
-.vibecodingyuk-container .lead-text {
+.vibecodingyuk-container .main-paragraf-text {
   font-size: 1.05rem;
   text-align: justify;
   margin-bottom: 20px;
@@ -39,13 +39,13 @@
   display: inline-block;
 }
 
-.vibecodingyuk-container .roadmap-img {
+.vibecodingyuk-container .main-image {
   max-width: 480px;
   width: 100%;
 }
 
 /* Section Pillars System */
-.vibecodingyuk-container .roadmap-section {
+.vibecodingyuk-container .section-general {
   margin-top: 35px;
   margin-bottom: 35px;
 }
