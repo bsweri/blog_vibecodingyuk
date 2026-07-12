@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+.vibecodingyuk-container {
+  font-family: 'Poppins', system-ui, -apple-system, sans-serif;
+  color: #334155;
+  line-height: 1.7;
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.vibecodingyuk-container .main-title {
+  color: #1e3a8a;
+  font-size: 2.3rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  margin-bottom: 20px;
+}
+
+.vibecodingyuk-container .lead-text {
+  font-size: 1.05rem;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+/* Image Assets Setup (Ultra Responsive) */
+.vibecodingyuk-container .image-separator {
+  text-align: center;
+  margin: 30px 0;
+  clear: both;
+}
+
+.vibecodingyuk-container .responsive-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  display: inline-block;
+}
+
+.vibecodingyuk-container .roadmap-img {
+  max-width: 480px;
+  width: 100%;
+}
+
+/* Section Pillars System */
+.vibecodingyuk-container .roadmap-section {
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+
+.vibecodingyuk-container .section-title {
+  display: flex;
+  align-items: center;
+  font-size: 1.45rem;
+  font-weight: 700;
+  padding-left: 15px;
+  margin-bottom: 15px;
+}
+
+/* Color Identity Mapping */
+.pilar-blue .section-title { color: #2563eb; border-left: 5px solid #2563eb; }
+.pilar-red .section-title { color: #db2777; border-left: 5px solid #db2777; }
+.pilar-purple .section-title { color: #7c3aed; border-left: 5px solid #7c3aed; }
+
+.vibecodingyuk-container .section-intro {
+  font-size: 1.05rem;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+/* Intelligent Layout Grid System */
+.vibecodingyuk-container .card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.vibecodingyuk-container .tech-card {
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 22px;
+  box-sizing: border-box;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.vibecodingyuk-container .tech-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.04);
+}
+
+/* Specific Card Borders based on Pillar */
+.pilar-blue .tech-card { border-left: 4px solid #2563eb; }
+.pilar-red .tech-card { border-left: 4px solid #db2777; }
+.pilar-purple .tech-card { border-left: 4px solid #7c3aed; }
+
+.vibecodingyuk-container .card-title {
+  color: #1e293b;
+  font-size: 1.15rem;
+  font-weight: 00;
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+/* Typography & Lists Utilities */
+.vibecodingyuk-container .tech-list {
+  padding-left: 20px;
+  margin: 0;
+}
+
+.vibecodingyuk-container .tech-list li {
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+}
+
+.vibecodingyuk-container .note-text {
+  color: #64748b;
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+
+.vibecodingyuk-container .warning-text {
+  color: #db2777;
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin-top: 15px;
+}
+
+/* Gen Z Callout Box (Tips) */
+.vibecodingyuk-container .tips-container {
+  background-color: #eff6ff;
+  border: 2px dashed #2563eb;
+  border-radius: 16px;
+  padding: 25px;
+  margin-top: 35px;
+}
+
+.vibecodingyuk-container .tips-header {
+  color: #2563eb;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+.vibecodingyuk-container .tips-container p {
+  font-size: 0.98rem;
+  margin-bottom: 12px;
+}
+
+.vibecodingyuk-container .closing-question {
+  color: #2563eb;
+  font-weight: 600;
+  margin-bottom: 0 !important;
+}
+
+/* --- Media Queries / Responsive Rules --- */
+
+/* Tablet & Smaller Screens Profile */
+@media (max-width: 768px) {
+  .vibecodingyuk-container .main-title {
+    font-size: 2rem;
+  }
+  .vibecodingyuk-container .section-title {
+    font-size: 1.3rem;
+  }
+}
+
+/* Mobile Devices Profile */
+@media (max-width: 480px) {
+  .vibecodingyuk-container {
+    padding: 5px;
+  }
+  .vibecodingyuk-container .main-title {
+    font-size: 1.75rem;
+  }
+  .vibecodingyuk-container .card-grid {
+    grid-template-columns: 1fr; /* Paksa satu kolom penuh di layar HP kecil */
+  }
+  .vibecodingyuk-container .tech-card {
+    padding: 18px;
+  }
+  .vibecodingyuk-container .tips-container {
+    padding: 18px;
+  }
+}
